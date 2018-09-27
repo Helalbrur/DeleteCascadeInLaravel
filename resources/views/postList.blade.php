@@ -16,6 +16,7 @@
               <tr>
                 <td>No</td>
                 <td>Post content</td>
+                <td>Category</td>
                 <td>Action</td>
               </tr>
              
@@ -23,6 +24,7 @@
               <tr>
                 <td>{{$post->id}}</td>
                 <td>{{$post->content}}</td>
+                <td>{{$post->category->category_name}}</td>
                 <td><a href="{{route('delete_post',$post->id)}}" class="btn btn-sm btn-danger">Delete</a></td>
               </tr>
               @endforeach
